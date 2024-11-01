@@ -1,7 +1,9 @@
 # Hello Go Config
-GitOps Config project for the hello-go project.
+
+GitOps Config project for the [hello-go](https://github.com/jkeam/hello-go) project.
 
 ## Prerequisite
+
 1. OpenShift 4.14+ cluster with admin access
 2. OpenShift GitOps 1.14.x+
 
