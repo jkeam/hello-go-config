@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: hello-go
+resources:
+- deployment.yaml
+- service.yaml
+- route.yaml
+images:
+- name: hello-go
+  newName: image-registry.openshift-image-registry.svc:5000/hello-cicd/hello-go
+  newTag: latest

@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: hello-go
+  labels:
+    app: hello-go
+spec:
+  path: /
+  to:
+    kind: Service
+    name: hello-go
+    weight: 100
+  port:
+    targetPort: port8080
+  tls:
+    termination: edge

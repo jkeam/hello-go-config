@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-go
+  namespace: openshift-gitops
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: hello-go
+  source:
+    path: base
+    repoURL: https://github.com/jkeam/hello-go-config.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
