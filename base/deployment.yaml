@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: hello-go
-        image: image-registry.openshift-image-registry.svc:5000/hello-cicd/hello-go:latest
+        image: hello-go
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
