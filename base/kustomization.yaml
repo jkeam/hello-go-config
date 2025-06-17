@@ -7,5 +7,5 @@ resources:
 - route.yaml
 images:
 - name: hello-go
-  newName: image-registry.openshift-image-registry.svc:5000/hello-cicd/hello-go
+  newName: quay.io/jkeam/hello-go
   newTag: latest
