@@ -11,7 +11,7 @@ spec:
   source:
     path: base
     repoURL: https://github.com/jkeam/hello-go-config.git
-    targetRevision: main
+    targetRevision: quay
   syncPolicy:
     automated:
       prune: true
